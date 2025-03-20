@@ -1,0 +1,63 @@
+
+DRIVER: Found molfile format trajectory dcd with name /scratch/projects/hockygroup-archive/PublishedPapers/2023-Sasmal-posLDA-JCTC/HP35/test_lda_from_desres/pnas2012-2f4k-360K-protein-full-traj-DESRES.dcd
+dcdplugin) detected standard 32-bit DCD file of native endianness
+dcdplugin) CHARMM format DCD file (also NAMD 2.1 and later)
+PLUMED: PLUMED is starting
+PLUMED: Version: 2.9.0-dev (git: 694568f97) compiled on Sep  5 2022 at 14:07:20
+PLUMED: Please cite these papers when using PLUMED [1][2]
+PLUMED: For further information see the PLUMED web page at http://www.plumed.org
+PLUMED: Root: /scratch/work/hockygroup/software/plumed2_subarna/lib/plumed
+PLUMED: For installed feature, see /scratch/work/hockygroup/software/plumed2_subarna/lib/plumed/src/config/config.txt
+PLUMED: Molecular dynamics engine: driver
+PLUMED: Precision of reals: 8
+PLUMED: Running over 1 node
+PLUMED: Number of threads: 1
+PLUMED: Cache line size: 512
+PLUMED: Number of atoms: 577
+PLUMED: File suffix: 
+PLUMED: FILE: plumed.dat
+PLUMED: Action UNITS
+PLUMED:   with label @0
+PLUMED:   length: A = 0.1 nm
+PLUMED:   energy: kcal/mol = 4.184 kj/mol
+PLUMED:   time: ps
+PLUMED:   charge: e
+PLUMED:   mass: amu
+PLUMED:   using physical units
+PLUMED:   inside PLUMED, Boltzmann constant is 0.0019872
+PLUMED: Action GROUP
+PLUMED:   with label ga_list
+PLUMED:   list of atoms:
+PLUMED:  7 9 10 11 15 16 17 23 24 25 32 33 34 40 41 42 51 52 58 60 61 62 65 66 67
+PLUMED:  72 73 74 83 84 85 87 88 89 95 96 97 102 103 104 113 114 115 119 120 121 124 125 126 135
+PLUMED:  136 137 140 141 142 148 149 150 156 157 158 163 164 165 171 172 173 185 186 191 193 194 195 202 203
+PLUMED:  204 211 212 213 221 222 223 229 230 235 237 238 244 246 247 248 255 256 262 264 265 266 268 269 270
+PLUMED:  276
+PLUMED: Action LDA_PROJ
+PLUMED:   with label ld1
+PLUMED:   of 101 atoms
+PLUMED:   7  9  10  11  15  16  17  23  24  25  32  33  34  40  41  42  51  52  58  60  61  62  65  66  67  72  73  74  83  84  85  87  88  89  95  96  97  102  103  104  113  114  115  119  120  121  124  125  126  135  136  137  140  141  142  148  149  150  156  157  158  163  164  165  171  172  173  185  186  191  193  194  195  202  203  204  211  212  213  221  222  223  229  230  235  237  238  244  246  247  248  255  256  262  264  265  266  268  269  270  276
+PLUMED:  using periodic boundary conditions
+PLUMED: Action PRINT
+PLUMED:   with label @3
+PLUMED:   with stride 1
+PLUMED:   with arguments ld1
+PLUMED:   on file ld1_vals.txt
+PLUMED:   with format  %8.8f
+PLUMED: END FILE: plumed.dat
+PLUMED: Timestep: 1.000000
+PLUMED: KbT has not been set by the MD engine
+PLUMED: It should be set by hand where needed
+PLUMED: Relevant bibliography:
+PLUMED:   [1] The PLUMED consortium, Nat. Methods 16, 670 (2019)
+PLUMED:   [2] Tribello, Bonomi, Branduardi, Camilloni, and Bussi, Comput. Phys. Commun. 185, 604 (2014)
+PLUMED: Please read and cite where appropriate!
+PLUMED: Finished setup
+PLUMED:                                               Cycles        Total      Average      Minimum      Maximum
+PLUMED:                                                    1 18504.893696 18504.893696 18504.893696 18504.893696
+PLUMED: 1 Prepare dependencies                       1526041     0.462193     0.000000     0.000000     0.000012
+PLUMED: 2 Sharing data                               1526041     4.298189     0.000003     0.000002     0.003093
+PLUMED: 3 Waiting for data                           1526041     0.582137     0.000000     0.000000     0.000013
+PLUMED: 4 Calculating (forward loop)                 1526041 18483.363771     0.012112     0.012000     0.012744
+PLUMED: 5 Applying (backward loop)                   1526041     5.426664     0.000004     0.000003     0.000121
+PLUMED: 6 Update                                     1526041     5.099925     0.000003     0.000002     0.108704
